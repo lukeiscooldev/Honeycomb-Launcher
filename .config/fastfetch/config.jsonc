@@ -1,0 +1,25 @@
+{
+  "$schema": "https://github.com",
+  "logo": {
+    "source": "lfs"
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "terminal",
+    "cpu",
+    "gpu",
+    "memory",
+    "break",
+    "colors"
+  ]
+}
