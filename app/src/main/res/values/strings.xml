@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Honeycomb Launcher</string>
+    <string name="search_hint">Google</string>
+    <string name="all_apps">All apps</string>
+    <string name="add_to_home">Add to Home screen</string>
+    <string name="add_apps">Apps</string>
+    <string name="add_wallpaper">Wallpaper</string>
+    <string name="select_wallpaper">Select wallpaper</string>
+    <string name="remove">Remove</string>
+</resources>
