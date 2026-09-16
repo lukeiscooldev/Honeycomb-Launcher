@@ -1,0 +1,148 @@
+21:57:20.536 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+21:57:20.720 [INFO] [org.gradle.launcher.daemon.server.health.gc.GarbageCollectionMonitor] Unable to determine a garbage collection monitoring strategy for JVMStrategy{Debian version 21.0.11}
+21:57:20.900 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=642bb13e-c7a7-4a66-af56-f38fc844d232,javaHome=/usr/lib/jvm/java-21-openjdk-arm64,daemonRegistryDir=/home/luke/.gradle/daemon,pid=19207,idleTimeout=10800000,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+21:57:21.010 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+21:57:21.013 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+21:57:21.015 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? false
+21:57:21.017 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+21:57:21.018 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] No multicast interfaces, using fallbacks
+21:57:21.025 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [95efd31b-f4bc-4a8a-9b67-317b34e14cdf port:39167, addresses:[/127.0.0.1]].
+21:57:21.057 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Tue Sep 15 21:57:21 UTC 2026, with address: [95efd31b-f4bc-4a8a-9b67-317b34e14cdf port:39167, addresses:[/127.0.0.1]]
+21:57:21.058 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [95efd31b-f4bc-4a8a-9b67-317b34e14cdf port:39167, addresses:[/127.0.0.1]]
+21:57:21.059 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=642bb13e-c7a7-4a66-af56-f38fc844d232,javaHome=/usr/lib/jvm/java-21-openjdk-arm64,daemonRegistryDir=/home/luke/.gradle/daemon,pid=19207,idleTimeout=10800000,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+21:57:21.062 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [95efd31b-f4bc-4a8a-9b67-317b34e14cdf port:39167, addresses:[/127.0.0.1]], context: DefaultDaemonContext[uid=642bb13e-c7a7-4a66-af56-f38fc844d232,javaHome=/usr/lib/jvm/java-21-openjdk-arm64,daemonRegistryDir=/home/luke/.gradle/daemon,pid=19207,idleTimeout=10800000,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+21:57:21.101 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+21:57:21.118 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:21.139 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:21.147 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+21:57:21.152 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+21:57:21.181 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+21:57:21.191 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:51838 to /127.0.0.1:39167.
+21:57:21.196 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+21:57:21.198 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+21:57:21.565 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 26: received class org.gradle.launcher.daemon.protocol.Build
+21:57:21.566 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 26: Received non-IO message from client: Build{id=e3d5088f-f2ab-4b8b-b953-178d02ddc605.1, currentDir=/home/luke/HoneycombLauncher}
+21:57:21.567 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=e3d5088f-f2ab-4b8b-b953-178d02ddc605.1, currentDir=/home/luke/HoneycombLauncher}.
+21:57:21.568 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=e3d5088f-f2ab-4b8b-b953-178d02ddc605.1, currentDir=/home/luke/HoneycombLauncher} with connection: socket connection from /127.0.0.1:39167 to /127.0.0.1:51838.
+21:57:21.579 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=e3d5088f-f2ab-4b8b-b953-178d02ddc605.1, currentDir=/home/luke/HoneycombLauncher}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:39167 to /127.0.0.1:51838] after 0.0 minutes of idle
+21:57:21.580 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [95efd31b-f4bc-4a8a-9b67-317b34e14cdf port:39167, addresses:[/127.0.0.1]]
+21:57:21.581 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [95efd31b-f4bc-4a8a-9b67-317b34e14cdf port:39167, addresses:[/127.0.0.1]]
+21:57:21.587 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+21:57:21.590 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:21.595 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:21.597 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+21:57:21.599 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+21:57:21.601 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=e3d5088f-f2ab-4b8b-b953-178d02ddc605.1, currentDir=/home/luke/HoneycombLauncher}. Dispatching build started information...
+21:57:21.603 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 28: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+21:57:21.619 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/data/data/com.termux/files/usr/bin, ANDROID_I18N_ROOT=/apex/com.android.i18n, ANDROID_DATA=/data, ANDROID_TZDATA_ROOT=/apex/com.android.tzdata, OLDPWD=/usr/share/gradle, TERM=xterm-256color, USER=luke, EXTERNAL_STORAGE=/storage/self/primary, PROOT_L2S_DIR=/data/data/com.termux/files/usr/var/lib/proot-distro/containers/debian/rootfs/.l2s, PULSE_SERVER=127.0.0.1, PS1=\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;36m\]very-powerful-pc\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ , HOSTNAME=very-powerful-pc, MOZ_FAKE_NO_SANDBOX=1, COLORTERM=truecolor, DEX2OATBOOTCLASSPATH=/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/system/framework/itel_addition.jar:/system/framework/radio_interactor_common.jar:/system/framework/unisoc_ims_common.jar:/system/framework/transsion-telephony-common.jar:/system/framework/unisoc-framework.jar, ANDROID_ART_ROOT=/apex/com.android.art, ANDROID_ROOT=/system, LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:, PWD=/home/luke/HoneycombLauncher, BOOTCLASSPATH=/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/system/framework/itel_addition.jar:/system/framework/radio_interactor_common.jar:/system/framework/unisoc_ims_common.jar:/system/framework/transsion-telephony-common.jar:/system/framework/unisoc-framework.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.mediaprovider/javalib/framework-pdf.jar:/apex/com.android.mediaprovider/javalib/framework-photopicker.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.wifi/javalib/framework-wifi.jar:/apex/com.transsion.mi.os.framework/javalib/os-framework.jar, SHLVL=1, HOME=/home/luke, _=/usr/bin/gradle}
+21:57:21.626 [WARN] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Warning: Unable able to set daemon's environment variables to match the client because: 
+  Java 9 does not support modifying environment variables.
+  If the daemon was started with a significantly different environment from the client, and your build 
+  relies on environment variables, you may experience unexpected behavior.
+21:57:21.637 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+21:57:21.639 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 19207). The daemon log file: /home/luke/.gradle/daemon/4.4.1/daemon-19207.out.log
+21:57:21.647 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 2.1 GB]
+21:57:21.661 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+21:57:21.662 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=642bb13e-c7a7-4a66-af56-f38fc844d232,javaHome=/usr/lib/jvm/java-21-openjdk-arm64,daemonRegistryDir=/home/luke/.gradle/daemon,pid=19207,idleTimeout=10800000,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring root project 'HoneycombLauncher'.
+> Could not resolve all files for configuration ':classpath'.
+   > Could not resolve io.grpc:grpc-api:[1.45.1].
+     Required by:
+         project : > com.android.tools.build:gradle:8.1.4 > io.grpc:grpc-core:1.45.1
+      > Could not resolve io.grpc:grpc-api:[1.45.1].
+         > Failed to list versions for io.grpc:grpc-api.
+            > Unable to load Maven meta-data from https://dl.google.com/dl/android/maven2/io/grpc/grpc-api/maven-metadata.xml.
+               > Could not get resource 'https://dl.google.com/dl/android/maven2/io/grpc/grpc-api/maven-metadata.xml'.
+                  > Could not GET 'https://dl.google.com/dl/android/maven2/io/grpc/grpc-api/maven-metadata.xml'.
+                     > dl.google.com: Temporary failure in name resolution
+      > Could not resolve io.grpc:grpc-api:[1.45.1].
+         > Failed to list versions for io.grpc:grpc-api.
+            > Unable to load Maven meta-data from https://repo.maven.apache.org/maven2/io/grpc/grpc-api/maven-metadata.xml.
+               > Could not HEAD 'https://repo.maven.apache.org/maven2/io/grpc/grpc-api/maven-metadata.xml'.
+                  > repo.maven.apache.org: Temporary failure in name resolution
+   > Could not resolve io.grpc:grpc-core:[1.45.1].
+     Required by:
+         project : > com.android.tools.build:gradle:8.1.4 > io.grpc:grpc-netty:1.45.1
+      > Could not resolve io.grpc:grpc-core:[1.45.1].
+         > Failed to list versions for io.grpc:grpc-core.
+            > Unable to load Maven meta-data from https://dl.google.com/dl/android/maven2/io/grpc/grpc-core/maven-metadata.xml.
+               > Could not get resource 'https://dl.google.com/dl/android/maven2/io/grpc/grpc-core/maven-metadata.xml'.
+                  > Could not GET 'https://dl.google.com/dl/android/maven2/io/grpc/grpc-core/maven-metadata.xml'.
+                     > dl.google.com
+      > Could not resolve io.grpc:grpc-core:[1.45.1].
+         > Failed to list versions for io.grpc:grpc-core.
+            > Unable to load Maven meta-data from https://repo.maven.apache.org/maven2/io/grpc/grpc-core/maven-metadata.xml.
+               > Could not HEAD 'https://repo.maven.apache.org/maven2/io/grpc/grpc-core/maven-metadata.xml'.
+                  > repo.maven.apache.org
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 13s
+21:57:29.529 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+21:57:29.556 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+21:57:29.558 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=e3d5088f-f2ab-4b8b-b953-178d02ddc605.1, currentDir=/home/luke/HoneycombLauncher}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:39167 to /127.0.0.1:51838]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@63cd85cc with state Busy
+21:57:29.559 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=e3d5088f-f2ab-4b8b-b953-178d02ddc605.1, currentDir=/home/luke/HoneycombLauncher}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:39167 to /127.0.0.1:51838]
+21:57:29.560 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+21:57:29.560 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [95efd31b-f4bc-4a8a-9b67-317b34e14cdf port:39167, addresses:[/127.0.0.1]]
+21:57:29.561 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [95efd31b-f4bc-4a8a-9b67-317b34e14cdf port:39167, addresses:[/127.0.0.1]]
+21:57:29.565 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+21:57:29.568 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:29.575 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:29.579 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+21:57:29.580 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Failure[value=org.gradle.initialization.ReportedException: org.gradle.internal.exceptions.LocationAwareException: A problem occurred configuring root project 'HoneycombLauncher'.]
+21:57:29.582 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 25: dispatching class org.gradle.launcher.daemon.protocol.Failure
+21:57:29.741 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=e3d5088f-f2ab-4b8b-b953-178d02ddc605.1, currentDir=/home/luke/HoneycombLauncher}
+21:57:29.919 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 26: received class org.gradle.launcher.daemon.protocol.CloseInput
+21:57:29.920 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 26: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@32bd026e
+21:57:29.930 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 26: received class org.gradle.launcher.daemon.protocol.Finished
+21:57:29.930 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 26: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@756db5b4
+21:57:29.931 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@756db5b4
+21:57:29.933 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 25: stopping connection
+21:57:29.933 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+21:57:29.936 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 26: received null
+21:57:29.938 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 26: Received end-of-input from client.
+21:57:29.940 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 25: stopping connection
+21:57:31.191 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+21:57:31.195 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:57:31.195 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:31.197 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:31.201 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:57:31.202 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:31.203 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:41.190 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+21:57:41.192 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:57:41.193 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:41.194 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:41.198 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:57:41.199 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:41.201 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:41.203 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:57:41.204 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:41.206 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:51.190 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+21:57:51.192 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:57:51.193 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:51.195 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:51.201 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:57:51.202 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:51.204 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:57:51.210 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:57:51.211 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:57:51.213 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:58:01.190 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+21:58:01.192 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:58:01.194 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:58:01.195 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:58:01.201 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:58:01.203 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:58:01.205 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+21:58:01.210 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+21:58:01.212 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+21:58:01.214 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

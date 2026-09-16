@@ -411,3 +411,120 @@ ld
 ls
 pwd
 exit
+git init
+git remote add origin https://github.com/lukeiscooldev/Honeycomb-Launcher.git
+cd HoneycombLauncher
+ls
+git add .
+git commit -m "Add Honeycomb Launcher source and GitHub Actions workflow"
+git branch -M main
+git push -u origin main
+# 1. Move everything inside the subfolder up to root
+git mv HoneycombLauncher/* .
+git mv HoneycombLauncher/.* . 2>/dev/null || true
+# 2. Delete the now-empty subfolder
+rmdir HoneycombLauncher
+# 3. Stage, commit, and push the clean layout
+git add .
+git commit -m "Fix project root folder structure"
+git push origin main
+# Move everything (including hidden files like .github) out of the subfolder
+mv HoneycombLauncher/* HoneycombLauncher/.* . 2>/dev/null || true
+# Remove the empty subfolder
+rmdir HoneycombLauncher
+# Force stage, commit, and push
+git add -A
+git commit -m "Flatten root directory structure"
+git push origin main
+# 1. Remove all tracked files from Git index and local working tree
+git rm -rf .
+# 2. Commit the clean slate
+git commit -m "Nuke repository files"
+# 3. Force push the empty commit to GitHub
+git push origin main
+git rm -r .
+git commit -m "Wipe all files from repo"
+git push origin main
+git init
+git remote add origin https://github.com/lukeiscooldev/Honeycomb-Launcher.git
+git add .
+git commit -m "Upload launcher project root files"
+git branch -M main
+git push -u origin main --force
+ls
+cd
+ls
+unzip HoneycombLauncher.zip
+cd HoneycombLauncher
+ls
+cd HoneycombLauncher
+ls
+# 1. Start clean in git
+git init
+# 2. Add remote URL
+git remote add origin https://github.com/lukeiscooldev/Honeycomb-Launcher.git
+# 3. Stage ALL extracted files
+git add -A
+# 4. Commit files locally
+git commit -m "Restore launcher source and GitHub Actions workflow from backup"
+# 5. Set branch name to main
+git branch -M main
+# 6. Force push to remote to overwrite GitHub's remote state
+git push -u origin main --force
+fastfetch
+clear
+fastfetch
+fetch
+exit
+fastfetch
+neofetch
+ls
+cd HoneycombLauncher
+lss
+ls
+./gradle build
+gradle bu8ld
+ls
+gradle build
+cmatrix
+exit
+cp /sdcard/Download/import.zip /home/luke
+mkdir import
+cp /home/luke/import.zip /home/luke/import
+rm import.zip
+cd import
+ls
+unzip import.zip
+rm import.zip
+ls
+git init
+git add .
+git commit -m "Initial commit for Minecraft Pack Importer"
+git branch -M main
+git remote add origin https://github.com/lukeiscooldev/just-import.git
+git push -u origin main
+exit
+cp /sdcard/Download/minecraft-pack-importer-android-kotlin.zip /home/luke
+mkdir importv2
+cp /home/luke/minecraft-pack-importer-android-kotlin.zip /home/luke/importv2
+cd importv2
+ls
+unzipminecraft-pack-importer-android-kotlin.zip
+unzip minecraft-pack-importer-android-kotlin.zip
+rm minecraft-pack-importer-android-kotlin.zip
+git add .
+git commit -m "Fix missing mipmap launcher icon resources"
+git push origin main
+luke@very-powerful-pc:~/importv2$ git push origin main
+Username for 'https://github.com': lukeiscooldev
+Password for 'https://lukeiscooldev@github.com':
+To https://github.com/lukeiscooldev/Honeycomb-Launcher.git
+error: failed to push some refs to 'https://github.com/lukeiscooldev/Honeycomb-Launcher.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+luke@very-powerful-pc:~/importv2$
+git push --force origin main
+exit
